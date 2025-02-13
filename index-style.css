@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(238, 132, 156);
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}
