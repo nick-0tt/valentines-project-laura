@@ -4,6 +4,8 @@ function switchAnswer() {
     const yesValue = document.getElementById('yes');
     const noValue = document.getElementById('no');
     console.log(noValue);
+
+
     if (document.querySelector('input:checked').value === "no") {
         noValue.setAttribute('id', 'yes');
         noValue.setAttribute('value', 'yes');
@@ -21,7 +23,10 @@ function switchAnswer() {
     console.log(document.querySelector('input:checked').value);
 }
 
-function toggleMessage() {
+document.getElementById("formA").addEventListener("submit", toggleMessage);
+
+function toggleMessage(event) {
+    event.preventDefault();
     const message = document.getElementById('love');
     console.log("dog");
     message.classList.toggle('hidden');

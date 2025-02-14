@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="index-style.css">
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,10 @@
     
     <h1>Laura Millett, will you be my valentine?</h1>
 
-    <form>
-        <input onclick="switchAnswer()" type="radio" id="yes" value="yes" name="answer"><span id="yes-label">Yes</span>
-        <input onclick="switchAnswer()" type="radio" id="no" value="no" name="answer"><span id="no-label">No</span>
-        <input id="btn"type="button" onclick = "toggleMessage()" value="Submit!">
+    <form id="formA">
+        <input required onclick="switchAnswer()" type="radio" id="yes" value="yes" name="answer"><span id="yes-label">Yes</span>
+        <input required onclick="switchAnswer()" type="radio" id="no" value="no" name="answer"><span id="no-label">No</span>
+        <input id="btn" type="submit" value="Submit!">
     </form>
 
     <h1 id="love"class="hidden">Amazing! I love you!</h1>
